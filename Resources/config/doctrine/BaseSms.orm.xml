@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <mapped-superclass name="Jhg\NexmoSmsBundle\Entity\BaseSms">
+        <id name="id" column="id" type="integer">
+            <generator strategy="AUTO" />
+        </id>
+
+        <field name="from"              type="string"    column="from"              length="11"         nullable="false" />
+        <field name="to"                type="string"    column="to"                length="15"         nullable="false" />
+        <field name="text"              type="string"    column="text"              length="160"        nullable="false" />
+        <field name="statusReportReq"   type="integer"   column="status_report_req"                     nullable="false" />
+        <field name="messageId"         type="string"    column="message_id"        length="16"         nullable="true" />
+
+        <field name="createdAt"    type="datetime"   column="created_at" />
+
+        <lifecycle-callbacks>
+            <lifecycle-callback type="prePersist" method="prePersist" />
+        </lifecycle-callbacks>
+    </mapped-superclass>
+</doctrine-mapping>

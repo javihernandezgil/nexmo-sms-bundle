@@ -1,0 +1,4 @@
+services:
+    jhg_nexmo_sms_sender:
+        class: Jhg\NexmoSmsBundle\Sender\Sender
+        arguments: [@jhg_nexmo_sms,@doctrine.orm.entity_manager]
