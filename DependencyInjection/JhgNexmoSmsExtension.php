@@ -18,6 +18,12 @@ class JhgNexmoSmsExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
+        $configuration = new Configuration();
+        $config = $this->processConfiguration($configuration, $configs);
+
+        $container->setParameter('jhg_nexmo_sms.sms.repository_short', $config['sms']['repository_short']);
+        $container->setParameter('jhg_nexmo_sms.receipt.class_name', $config['receipt']['class_name']);
+
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
     }

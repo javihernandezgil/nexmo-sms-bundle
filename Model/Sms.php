@@ -61,6 +61,16 @@ class Sms {
     /**
      * @var string
      */
+    protected $status;
+
+    /**
+     * @var \DateTime
+     */
+    protected $statusedAt;
+
+    /**
+     * @var string
+     */
     protected $messageId;
 
     /**
@@ -159,4 +169,35 @@ class Sms {
         return $this->createdAt;
     }
 
-} 
+    /**
+     * @param \DateTime $statusedAt
+     */
+    public function setStatusedAt($statusedAt)
+    {
+        $this->statusedAt = $statusedAt;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getStatusedAt()
+    {
+        return $this->statusedAt;
+    }
+
+    /**
+     * @param string $status
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+}

@@ -1,14 +1,14 @@
 <?php
 namespace Jhg\NexmoSmsBundle\Entity;
 
-use Jhg\NexmoSmsBundle\Model\Sms as SmsModel;
+use Jhg\NexmoSmsBundle\Model\SmsDeliveryReceipt as SmsDeliveryReceiptModel;
 
 /**
- * Class BaseSms
+ * Class BaseSmsDeliveryReceipt
  * @package Jhg\NexmoBundle\Entity
  * @author Javi Hernández
  */
-class BaseSms extends SmsModel {
+class BaseSmsDeliveryReceipt extends SmsDeliveryReceiptModel {
     /**
      * Hook on pre-persist operations
      */

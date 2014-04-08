@@ -1,0 +1,3 @@
+nexmo_sms_delivery_receipt:
+    path: /delivery-receipt
+    defaults: { _controller: JhgNexmoSmsBundle:SmsReceipt:deliveryReceipt }
