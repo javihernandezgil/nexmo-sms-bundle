@@ -41,7 +41,7 @@ class Sms {
     /**
      * @var integer
      */
-    protected $statusReportReq;
+    protected $statusReportReq = 0;
 
     /**
      * @var \DateTime

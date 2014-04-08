@@ -9,9 +9,9 @@
             <generator strategy="AUTO" />
         </id>
 
-        <field name="from"              type="string"    column="from"              length="11"         nullable="false" />
-        <field name="to"                type="string"    column="to"                length="15"         nullable="false" />
-        <field name="text"              type="string"    column="text"              length="160"        nullable="false" />
+        <field name="from"              type="string"    column="sender"            length="11"         nullable="false" />
+        <field name="to"                type="string"    column="phone"             length="15"         nullable="false" />
+        <field name="text"              type="string"    column="sms"               length="160"        nullable="false" />
         <field name="statusReportReq"   type="integer"   column="status_report_req"                     nullable="false" />
         <field name="messageId"         type="string"    column="message_id"        length="16"         nullable="true" />
 
