@@ -1,14 +1,14 @@
 {
-    "name":        "javihernandezgil/nexmo-sms-bundle",
+    "name":        "javihgil/nexmo-sms-bundle",
     "type":        "symfony-bundle",
-    "description": "Provides extra features to javihernandezgil/nexmo-bundle like storing and delivery reports.",
+    "description": "Provides extra features to javihgil/nexmo-bundle like storing and delivery reports.",
     "keywords":    ["symfony", "bundle", "nexmo", "sms"],
     "license":     "MIT",
 
     "authors": [
         {
-            "name": "Javi Hernández Gil",
-            "homepage": "https://github.com/javihernandezgil/nexmo-sms-bundle"
+            "name": "Javi H. Gil",
+            "homepage": "https://github.com/javihgil/nexmo-sms-bundle"
         }
     ],
     

@@ -7,15 +7,15 @@
 **composer.json**
 
     "repositories": [
-        { "type": "vcs", "url": "https://github.com/javihernandezgil/nexmo-bundle.git" },
-        { "type": "vcs", "url": "https://github.com/javihernandezgil/nexmo-extra-bundle.git" },
+        { "type": "vcs", "url": "https://github.com/javihgil/nexmo-bundle.git" },
+        { "type": "vcs", "url": "https://github.com/javihgil/nexmo-extra-bundle.git" },
         ...
     ],
 
     "require": {
         ...
-        "javihernandezgil/nexmo-bundle": "dev-master",
-        "javihernandezgil/nexmo-extra-bundle": "dev-master",
+        "javihgil/nexmo-bundle": "dev-master",
+        "javihgil/nexmo-extra-bundle": "dev-master",
         ...
     },
 
